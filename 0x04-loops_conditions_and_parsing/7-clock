@@ -5,7 +5,7 @@
 
 h=0
 echo "Hour: $h"
-while [ "$h" -lt 12 ];
+while [ "$h" -le 12 ];
 do
 	echo "Hour: $h"
 	m=1
