@@ -15,7 +15,7 @@ do
 		echo "Hour: $h"
 		m=0
 	fi
-	if [ "$h" -eq 24 ]
+	if [ "$h" -eq 12 ]
 	then
 		m=59
 	fi
