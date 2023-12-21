@@ -7,6 +7,7 @@
 n=1
 while [ "$n" -le 20 ];
 do
+	echo "$n"
 	case $n in
 		"4")
 			echo "bad luck from China"
@@ -19,11 +20,6 @@ do
 		"17")
 			echo "bad luck from Italy"
 			;;
-
-		*)
-			echo "$n"
-			;;
-
   	esac
 	((n++))
 done
