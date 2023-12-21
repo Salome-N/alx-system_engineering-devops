@@ -8,10 +8,22 @@ n=1
 while [ "$n" -le 20 ];
 do
 	case $n in
-		"4") echo "bad luck from China";;
-		"9") echo "bad luck from Japan";;
-		"17") echo "bad luck from Italy";;
-		*)echo "$n";;
+		"4")
+			echo "bad luck from China"
+			;;
+
+		"9")
+			echo "bad luck from Japan"
+			;;
+
+		"17")
+			echo "bad luck from Italy"
+			;;
+
+		*)
+			echo "$n"
+			;;
+
   	esac
 	((n++))
 done
