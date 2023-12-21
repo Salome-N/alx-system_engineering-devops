@@ -4,20 +4,15 @@
 # display minutes from 1 to 59
 
 h=0
-m=1
 echo "Hour: $h"
-while [ "$m" -lt 60 ];
+while [ "$h" -lt 12 ];
 do
-	echo "$m"
-	if [ "$m" -eq 59 ]
-	then
-		((h++))
-		echo "Hour: $h"
-		m=0
-	fi
-	if [ "$h" -eq 12 ]
-	then
-		m=59
-	fi
-	((m++))
+	m=1
+	while [ "$m" -lt 60 ];
+	do
+		echo "$m"
+		((m++))
+	done
+	((h++))
+	echo "Hour: $h"
 done
