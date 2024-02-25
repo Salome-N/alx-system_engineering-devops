@@ -2,6 +2,6 @@
 
 file_line { 'Declare Identity File':
   ensure => 'present',
-  line   => '    IdentityFile ~/.ssh/school'
+  line   => '    IdentityFile ~/.ssh/school',
   path   => '/etc/ssh/ssh_config',
 }
