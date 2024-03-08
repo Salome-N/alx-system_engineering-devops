@@ -9,11 +9,11 @@ domain_info () {
     echo ""
 }
 
-if [ -z "#2" ]; then
+if [ "$#" == 1 ]; then
   for sub_domain in "www" "lb-01" "web-01" "web-02"
   do
     domain_info "$1" "$sub_domain"
   done
-else
-  domain_info "$1" $2"
+elif [ "$#" == 2 ]; then
+  domain_info "$1" "$2"
 fi
