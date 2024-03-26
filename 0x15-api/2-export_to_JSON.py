@@ -16,5 +16,5 @@ if __name__ == "__main__":
         json.dump({user_id: [{
             "task": t.get("title"),
             "completed": t.get("completed"),
-             "username": username
+            "username": username
             } for t in todos]}, jsonf)
